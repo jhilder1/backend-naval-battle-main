@@ -1,0 +1,49 @@
+/* Estilo básico para la tabla */
+table {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    text-align: center;
+    cursor: pointer;
+}
+
+.barco {
+    background-color: #000;
+}
+
+.barco:hover {
+    background-color: #444;
+}
+
+/* Estilo para casillas disparadas */
+.acertado {
+    background-color: green;
+}
+
+.fallado {
+    background-color: red;
+}
+
+#inicio {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#tableros, #turnoJugador {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#tableros h2, #turnoJugador h2 {
+    margin-bottom: 20px;
+}
+
+#tableroJugador2 {
+    display: none;
+}
+

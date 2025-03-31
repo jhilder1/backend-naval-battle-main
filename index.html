@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalla Naval</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="inicio">
+        <h2>Bienvenidos al juego de Batalla Naval</h2>
+        <input type="text" id="nombreJugador1" placeholder="Nombre Jugador 1">
+        <input type="text" id="nombreJugador2" placeholder="Nombre Jugador 2">
+        <label for="tamanoTablero" >eliga el rango</label><input type="range"   id="tamanoTablero" min="10" max="20" value="15" step="5">
+        <button onclick="iniciarJuego()">Iniciar Juego</button>
+    </div>
+
+    <div id="tableros" style="display: none;">
+        <h2>Coloca los barcos</h2>
+        <p id="jugadorNombre"></p>
+        <div id="tableroJugador1"></div>
+        <div id="tableroJugador2"></div>
+    </div>
+
+    <div id="turnoJugador" style="display: none;">
+        <h2>¡Es tu turno!</h2>
+        <p id="jugadorTurnoNombre"></p>
+        <div id="tableroDisparoJugador"></div>
+        <p id="puntajeJugador1"></p>
+        <p id="puntajeJugador2"></p>
+    </div>
+
+    <script src="batallaNaval.js"></script>
+</body>
+</html>
+
+
+
